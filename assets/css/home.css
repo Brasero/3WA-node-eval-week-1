@@ -1,0 +1,73 @@
+/*
+.container
+    .form
+        .formInput
+        .formInput
+        .formSubmit
+ */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formInput {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-monospace);
+    outline: none;
+}
+
+.formSubmit {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-monospace);
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.formSubmit:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.formSubmit:active {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.formSubmit:disabled {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    cursor: not-allowed;
+}
+
+.formError {
+    color: var(--danger-color);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-monospace);
+    font-weight: var(--font-weight-bold);
+    margin: 0.5rem;
+}

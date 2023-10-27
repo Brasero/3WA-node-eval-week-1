@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-sm: 0.875rem;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;
+    --line-height-base: 1.5;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.5rem;
+    --h5-font-size: 1.25rem;
+    --h6-font-size: 1rem;
+    --headings-margin-bottom: 0.5rem;
+    --headings-font-family: inherit;
+    --headings-font-weight: 500;
+    --headings-line-height: 1.2;
+    --display1-size: 6rem;
+    --display2-size: 5.5rem;
+    --display3-size: 4.5rem;
+    --display4-size: 3.5rem;
+    --display1-weight: 300;
+    --display2-weight: 300;
+    --display3-weight: 300;
+    --display4-weight: 300;
+    --display-line-height: 1.2;
+    --lead-font-size: 1.25rem;
+    --lead-font-weight: 300;
+    --small-font-size: 80%;
+    --text-muted: #6c757d;
+    --blockquote-font-size: 1.25rem;
+    --blockquote-border-color: #e9ecef;
+    --hr-border-color: rgba(0, 0, 0, 0.1);
+    --dt-font-weight: 700;
+    --kbd-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    --nested-kbd-font-weight: 400;
+    --list-inline-padding: 0.5rem;
+    --mark-padding: 0.2em;
+    --hr-margin-y: 1rem;
+    --mark-bg: #fcf8e3;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-family: var(--font-family-sans-serif);
+    line-height: var(--line-height-base);
+    -webkit-text-size-adjust: var(--font-size-base);
+    -webkit-tap-highlight-color: transparent;
+}
+
+main, body, header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+nav ul {
+   width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--font-size-base);
+}
+
+nav ul li {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    font-family: var(--font-family-monospace);
+}
+
+nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active, nav ul li a.active {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}

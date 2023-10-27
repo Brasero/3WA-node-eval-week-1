@@ -1,0 +1,20 @@
+extends layout
+mixin user(user)
+    - const { birth, name } = user
+    li.list-item
+        span.list-item-name= name
+        span.list-item-birth= birth
+        button.list-item-delete-button: a(href=`/delete/${name}`) X
+
+block title
+    title Liste des élèves
+
+block stylesheets
+    link(rel='stylesheet' href='/assets/css/users.css')
+
+block content
+    div.container
+        div.list
+            ul.list-container
+                each user in users
+                    +user(user)
