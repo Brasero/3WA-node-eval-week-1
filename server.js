@@ -55,7 +55,7 @@ createServer((req, res) => {
     }
     if (url === '/users') {
         const students = getStudents().map((user) => {
-            user.birth = dayjs(user.birth).format('DD MMM YYYY')
+            user.birth = dayjs(user.birth).locale('fr').format('DD MMM YYYY')
             return user
         })
         renderFile('./view/users.pug', {users: students, location: url}, renderCallback(res))
